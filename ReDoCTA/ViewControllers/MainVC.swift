@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class MainVC: UIViewController, UITextFieldDelegate {
     
     lazy var label: UILabel = {
         let label = UILabel()
@@ -52,10 +53,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }()
     
     @objc func logInPressed(){
-        
+        guard let email = userNameText.text, email != "", let password = passwordText.text, password != "" else {
+            let vc = MainVC()
+            Alerts.showAlert(withTitle: "Error", andMessage: "Invalid Fields", VC: vc)
+                return
+            }
+            FirebaseAuthService.manager.loginUser(withEmail: email, password: password) { (result) in
+                self.handleLoginResponse(with: result)
+            }
     }
+    
     @objc func signInPressed(){
-        
+//        let signupVC = CreateAccountViewController()
+//        signupVC.modalPresentationStyle = .fullScreen
+//        present(signupVC, animated: true, completion: nil)
+    }
+    
+    private func handleLoginResponse(with result: Result<User,Error>) {
+        switch result{
+        case .failure(let error):
+            Alerts.showAlert(withTitle: "Error", andMessage: "\(error)", VC: MainVC())
+        case .success:
+            let VC = TabBar()
+            VC.modalPresentationStyle = .fullScreen
+            self.present(VC, animated: true, completion: nil)
+        }
     }
     
     func setupConstraints(){
@@ -95,6 +117,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupConstraints()
         // Do any additional setup after loading the view.
     }
 

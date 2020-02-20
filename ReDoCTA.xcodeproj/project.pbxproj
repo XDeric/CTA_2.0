@@ -27,6 +27,10 @@
 		85EF837B23FEF7E900F9AF77 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF837A23FEF7E900F9AF77 /* FirebaseService.swift */; };
 		85EF837D23FEF89600F9AF77 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF837C23FEF89600F9AF77 /* FavoriteViewController.swift */; };
 		85EF837F23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF837E23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift */; };
+		85EF838123FEFA8D00F9AF77 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838023FEFA8D00F9AF77 /* CreateAccountViewController.swift */; };
+		85EF838323FEFAAE00F9AF77 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838223FEFAAE00F9AF77 /* API.swift */; };
+		85EF838723FEFBBF00F9AF77 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838623FEFBBF00F9AF77 /* NetworkHelper.swift */; };
+		85EF838923FEFBC900F9AF77 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838823FEFBC900F9AF77 /* ImageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		85EF837A23FEF7E900F9AF77 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		85EF837C23FEF89600F9AF77 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		85EF837E23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsFromOnlineViewController.swift; sourceTree = "<group>"; };
+		85EF838023FEFA8D00F9AF77 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		85EF838223FEFAAE00F9AF77 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		85EF838623FEFBBF00F9AF77 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		85EF838823FEFBC900F9AF77 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A24BFEC8610CF81BA1EEA9E0 /* Pods-ReDoCTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.debug.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.debug.xcconfig"; sourceTree = "<group>"; };
 		A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReDoCTATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3122BE9CE6E7244438EC183 /* Pods-ReDoCTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.release.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +132,9 @@
 			children = (
 				85594E0923FEE93D00F0B0D1 /* Secrets.swift */,
 				85594E0F23FEEEA700F0B0D1 /* Model */,
+				85EF838423FEFB5300F9AF77 /* View */,
 				85594E0E23FEEDD600F0B0D1 /* ViewControllers */,
+				85EF838523FEFBAC00F9AF77 /* NetWork */,
 				85EF837723FEF7C000F9AF77 /* FireBase */,
 				85594E0D23FEEDA500F0B0D1 /* Supporting Files */,
 			);
@@ -158,8 +168,8 @@
 		85594E0E23FEEDD600F0B0D1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				85EF837523FEF75400F9AF77 /* TabBar.swift */,
 				85594DE823FEE79600F0B0D1 /* MainVC.swift */,
+				85EF838023FEFA8D00F9AF77 /* CreateAccountViewController.swift */,
 				85EF837E23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift */,
 				85EF837C23FEF89600F9AF77 /* FavoriteViewController.swift */,
 			);
@@ -171,7 +181,7 @@
 			children = (
 				85594E1023FEEEBB00F0B0D1 /* User.swift */,
 				85EF837323FEF63400F9AF77 /* UpdateUserData.swift */,
-				85594E1223FEEEE800F0B0D1 /* Alert.swift */,
+				85EF838223FEFAAE00F9AF77 /* API.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +194,24 @@
 			);
 			name = FireBase;
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85EF838423FEFB5300F9AF77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85EF837523FEF75400F9AF77 /* TabBar.swift */,
+				85594E1223FEEEE800F0B0D1 /* Alert.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85EF838523FEFBAC00F9AF77 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				85EF838623FEFBBF00F9AF77 /* NetworkHelper.swift */,
+				85EF838823FEFBC900F9AF77 /* ImageHelper.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		CDFF6047190A573103EF9DEA /* Pods */ = {
@@ -366,12 +394,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EF838123FEFA8D00F9AF77 /* CreateAccountViewController.swift in Sources */,
 				85EF837623FEF75400F9AF77 /* TabBar.swift in Sources */,
 				85594DE923FEE79600F0B0D1 /* MainVC.swift in Sources */,
 				85EF837B23FEF7E900F9AF77 /* FirebaseService.swift in Sources */,
+				85EF838323FEFAAE00F9AF77 /* API.swift in Sources */,
 				85EF837923FEF7DC00F9AF77 /* FirebaseAuth.swift in Sources */,
 				85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */,
 				85EF837F23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift in Sources */,
+				85EF838723FEFBBF00F9AF77 /* NetworkHelper.swift in Sources */,
 				85594E1123FEEEBB00F0B0D1 /* User.swift in Sources */,
 				85EF837423FEF63400F9AF77 /* UpdateUserData.swift in Sources */,
 				85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */,
@@ -379,6 +410,7 @@
 				85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */,
 				85EF837D23FEF89600F9AF77 /* FavoriteViewController.swift in Sources */,
 				85594E1323FEEEE800F0B0D1 /* Alert.swift in Sources */,
+				85EF838923FEFBC900F9AF77 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

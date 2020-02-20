@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE423FEE79600F0B0D1 /* AppDelegate.swift */; };
+		85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */; };
+		85594DE923FEE79600F0B0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE823FEE79600F0B0D1 /* ViewController.swift */; };
+		85594DEC23FEE79600F0B0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85594DEA23FEE79600F0B0D1 /* Main.storyboard */; };
+		85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */; };
+		85594DF123FEE79E00F0B0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85594DF023FEE79E00F0B0D1 /* Assets.xcassets */; };
+		85594DF423FEE79E00F0B0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */; };
+		85594DFF23FEE79E00F0B0D1 /* ReDoCTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85594DFB23FEE79E00F0B0D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85594DD923FEE79600F0B0D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85594DE023FEE79600F0B0D1;
+			remoteInfo = ReDoCTA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85594DE123FEE79600F0B0D1 /* ReDoCTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReDoCTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85594DE423FEE79600F0B0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85594DE823FEE79600F0B0D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85594DEB23FEE79600F0B0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85594DEE23FEE79600F0B0D1 /* ReDoCTA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReDoCTA.xcdatamodel; sourceTree = "<group>"; };
+		85594DF023FEE79E00F0B0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85594DF323FEE79E00F0B0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85594DF523FEE79E00F0B0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85594DFA23FEE79E00F0B0D1 /* ReDoCTATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReDoCTATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReDoCTATests.swift; sourceTree = "<group>"; };
+		85594E0023FEE79E00F0B0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85594DDE23FEE79600F0B0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85594DF723FEE79E00F0B0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85594DD823FEE79600F0B0D1 = {
+			isa = PBXGroup;
+			children = (
+				85594DE323FEE79600F0B0D1 /* ReDoCTA */,
+				85594DFD23FEE79E00F0B0D1 /* ReDoCTATests */,
+				85594DE223FEE79600F0B0D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85594DE223FEE79600F0B0D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85594DE123FEE79600F0B0D1 /* ReDoCTA.app */,
+				85594DFA23FEE79E00F0B0D1 /* ReDoCTATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85594DE323FEE79600F0B0D1 /* ReDoCTA */ = {
+			isa = PBXGroup;
+			children = (
+				85594DE423FEE79600F0B0D1 /* AppDelegate.swift */,
+				85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */,
+				85594DE823FEE79600F0B0D1 /* ViewController.swift */,
+				85594DEA23FEE79600F0B0D1 /* Main.storyboard */,
+				85594DF023FEE79E00F0B0D1 /* Assets.xcassets */,
+				85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */,
+				85594DF523FEE79E00F0B0D1 /* Info.plist */,
+				85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */,
+			);
+			path = ReDoCTA;
+			sourceTree = "<group>";
+		};
+		85594DFD23FEE79E00F0B0D1 /* ReDoCTATests */ = {
+			isa = PBXGroup;
+			children = (
+				85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */,
+				85594E0023FEE79E00F0B0D1 /* Info.plist */,
+			);
+			path = ReDoCTATests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85594DE023FEE79600F0B0D1 /* ReDoCTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85594E0323FEE79E00F0B0D1 /* Build configuration list for PBXNativeTarget "ReDoCTA" */;
+			buildPhases = (
+				85594DDD23FEE79600F0B0D1 /* Sources */,
+				85594DDE23FEE79600F0B0D1 /* Frameworks */,
+				85594DDF23FEE79600F0B0D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReDoCTA;
+			productName = ReDoCTA;
+			productReference = 85594DE123FEE79600F0B0D1 /* ReDoCTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85594DF923FEE79E00F0B0D1 /* ReDoCTATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85594E0623FEE79E00F0B0D1 /* Build configuration list for PBXNativeTarget "ReDoCTATests" */;
+			buildPhases = (
+				85594DF623FEE79E00F0B0D1 /* Sources */,
+				85594DF723FEE79E00F0B0D1 /* Frameworks */,
+				85594DF823FEE79E00F0B0D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85594DFC23FEE79E00F0B0D1 /* PBXTargetDependency */,
+			);
+			name = ReDoCTATests;
+			productName = ReDoCTATests;
+			productReference = 85594DFA23FEE79E00F0B0D1 /* ReDoCTATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85594DD923FEE79600F0B0D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = EricM;
+				TargetAttributes = {
+					85594DE023FEE79600F0B0D1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					85594DF923FEE79E00F0B0D1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 85594DE023FEE79600F0B0D1;
+					};
+				};
+			};
+			buildConfigurationList = 85594DDC23FEE79600F0B0D1 /* Build configuration list for PBXProject "ReDoCTA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85594DD823FEE79600F0B0D1;
+			productRefGroup = 85594DE223FEE79600F0B0D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85594DE023FEE79600F0B0D1 /* ReDoCTA */,
+				85594DF923FEE79E00F0B0D1 /* ReDoCTATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85594DDF23FEE79600F0B0D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85594DF423FEE79E00F0B0D1 /* LaunchScreen.storyboard in Resources */,
+				85594DF123FEE79E00F0B0D1 /* Assets.xcassets in Resources */,
+				85594DEC23FEE79600F0B0D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85594DF823FEE79E00F0B0D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85594DDD23FEE79600F0B0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85594DE923FEE79600F0B0D1 /* ViewController.swift in Sources */,
+				85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */,
+				85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */,
+				85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85594DF623FEE79E00F0B0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85594DFF23FEE79E00F0B0D1 /* ReDoCTATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85594DFC23FEE79E00F0B0D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85594DE023FEE79600F0B0D1 /* ReDoCTA */;
+			targetProxy = 85594DFB23FEE79E00F0B0D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85594DEA23FEE79600F0B0D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85594DEB23FEE79600F0B0D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85594DF323FEE79E00F0B0D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85594E0123FEE79E00F0B0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85594E0223FEE79E00F0B0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85594E0423FEE79E00F0B0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReDoCTA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.ReDoCTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85594E0523FEE79E00F0B0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReDoCTA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.ReDoCTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85594E0723FEE79E00F0B0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReDoCTATests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.ReDoCTATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReDoCTA.app/ReDoCTA";
+			};
+			name = Debug;
+		};
+		85594E0823FEE79E00F0B0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReDoCTATests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.ReDoCTATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReDoCTA.app/ReDoCTA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85594DDC23FEE79600F0B0D1 /* Build configuration list for PBXProject "ReDoCTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85594E0123FEE79E00F0B0D1 /* Debug */,
+				85594E0223FEE79E00F0B0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85594E0323FEE79E00F0B0D1 /* Build configuration list for PBXNativeTarget "ReDoCTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85594E0423FEE79E00F0B0D1 /* Debug */,
+				85594E0523FEE79E00F0B0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85594E0623FEE79E00F0B0D1 /* Build configuration list for PBXNativeTarget "ReDoCTATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85594E0723FEE79E00F0B0D1 /* Debug */,
+				85594E0823FEE79E00F0B0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85594DEE23FEE79600F0B0D1 /* ReDoCTA.xcdatamodel */,
+			);
+			currentVersion = 85594DEE23FEE79600F0B0D1 /* ReDoCTA.xcdatamodel */;
+			path = ReDoCTA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85594DD923FEE79600F0B0D1 /* Project object */;
+}

@@ -10,17 +10,29 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
+enum ChosenAPI: String {
+    case rijks = "rijks"
+    case ticket = "ticket"
+}
+
 struct AppUser {
     let email: String?
     let uid: String
     let dateCreated: Date?
-    let chosenAPI: String?
-    
+    var chosenAPI: ChosenAPI?{
+        get{
+            return ChosenAPI.rijks //will fix later
+        }
+        set{
+            
+        }
+    }
+//    
     init(from user: User) {
         self.email = user.email
         self.uid = user.uid
         self.dateCreated = user.metadata.creationDate
-        self.chosenAPI = user.photoURL?.absoluteString
+        self.chosenAPI = ChosenAPI(rawValue: "test")
     }
     
     init?(from dict: [String: Any], id: String) {
@@ -32,7 +44,7 @@ struct AppUser {
         self.email = email
         self.uid = id
         self.dateCreated = dateCreated
-        self.chosenAPI = chosenAPI
+        //self.chosenAPI = chosenAPI
     }
     
     var fieldsDict: [String: Any] {

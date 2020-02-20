@@ -31,6 +31,7 @@
 		85EF838723FEFBBF00F9AF77 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838623FEFBBF00F9AF77 /* NetworkHelper.swift */; };
 		85EF838923FEFBC900F9AF77 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838823FEFBC900F9AF77 /* ImageHelper.swift */; };
 		85EF838D23FEFEB000F9AF77 /* rijks.json in Resources */ = {isa = PBXBuildFile; fileRef = 85EF838C23FEFEB000F9AF77 /* rijks.json */; };
+		85EF838F23FF330800F9AF77 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF838E23FF330800F9AF77 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		85EF838623FEFBBF00F9AF77 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		85EF838823FEFBC900F9AF77 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		85EF838C23FEFEB000F9AF77 /* rijks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rijks.json; sourceTree = "<group>"; };
+		85EF838E23FF330800F9AF77 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A24BFEC8610CF81BA1EEA9E0 /* Pods-ReDoCTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.debug.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.debug.xcconfig"; sourceTree = "<group>"; };
 		A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReDoCTATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3122BE9CE6E7244438EC183 /* Pods-ReDoCTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.release.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				85594E1023FEEEBB00F0B0D1 /* User.swift */,
 				85EF837323FEF63400F9AF77 /* UpdateUserData.swift */,
 				85EF838223FEFAAE00F9AF77 /* API.swift */,
+				85594E1223FEEEE800F0B0D1 /* Alert.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -200,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				85EF837523FEF75400F9AF77 /* TabBar.swift */,
-				85594E1223FEEEE800F0B0D1 /* Alert.swift */,
+				85EF838E23FF330800F9AF77 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				85594E1123FEEEBB00F0B0D1 /* User.swift in Sources */,
 				85EF837423FEF63400F9AF77 /* UpdateUserData.swift in Sources */,
 				85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */,
+				85EF838F23FF330800F9AF77 /* LoginView.swift in Sources */,
 				85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */,
 				85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */,
 				85EF837D23FEF89600F9AF77 /* FavoriteViewController.swift in Sources */,

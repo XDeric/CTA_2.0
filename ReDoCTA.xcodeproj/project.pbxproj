@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		7CEC1DAACD2832A8C7BEA5D8 /* Pods_ReDoCTATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */; };
 		85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE423FEE79600F0B0D1 /* AppDelegate.swift */; };
 		85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */; };
-		85594DE923FEE79600F0B0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE823FEE79600F0B0D1 /* ViewController.swift */; };
+		85594DE923FEE79600F0B0D1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE823FEE79600F0B0D1 /* MainVC.swift */; };
 		85594DEC23FEE79600F0B0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85594DEA23FEE79600F0B0D1 /* Main.storyboard */; };
 		85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */; };
 		85594DF123FEE79E00F0B0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85594DF023FEE79E00F0B0D1 /* Assets.xcassets */; };
@@ -19,6 +19,8 @@
 		85594DFF23FEE79E00F0B0D1 /* ReDoCTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */; };
 		85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594E0923FEE93D00F0B0D1 /* Secrets.swift */; };
 		85594E0C23FEEB6A00F0B0D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */; };
+		85594E1123FEEEBB00F0B0D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594E1023FEEEBB00F0B0D1 /* User.swift */; };
+		85594E1323FEEEE800F0B0D1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594E1223FEEEE800F0B0D1 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 		85594DE123FEE79600F0B0D1 /* ReDoCTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReDoCTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85594DE423FEE79600F0B0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85594DE823FEE79600F0B0D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85594DE823FEE79600F0B0D1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		85594DEB23FEE79600F0B0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85594DEE23FEE79600F0B0D1 /* ReDoCTA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReDoCTA.xcdatamodel; sourceTree = "<group>"; };
 		85594DF023FEE79E00F0B0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		85594E0023FEE79E00F0B0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85594E0923FEE93D00F0B0D1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85594E1023FEEEBB00F0B0D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		85594E1223FEEEE800F0B0D1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A24BFEC8610CF81BA1EEA9E0 /* Pods-ReDoCTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.debug.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.debug.xcconfig"; sourceTree = "<group>"; };
 		A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReDoCTATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3122BE9CE6E7244438EC183 /* Pods-ReDoCTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.release.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,16 +110,10 @@
 		85594DE323FEE79600F0B0D1 /* ReDoCTA */ = {
 			isa = PBXGroup;
 			children = (
-				85594DE423FEE79600F0B0D1 /* AppDelegate.swift */,
-				85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */,
-				85594DE823FEE79600F0B0D1 /* ViewController.swift */,
 				85594E0923FEE93D00F0B0D1 /* Secrets.swift */,
-				85594DEA23FEE79600F0B0D1 /* Main.storyboard */,
-				85594DF023FEE79E00F0B0D1 /* Assets.xcassets */,
-				85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */,
-				85594DF523FEE79E00F0B0D1 /* Info.plist */,
-				85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */,
-				85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */,
+				85594E0F23FEEEA700F0B0D1 /* Model */,
+				85594E0E23FEEDD600F0B0D1 /* ViewControllers */,
+				85594E0D23FEEDA500F0B0D1 /* Supporting Files */,
 			);
 			path = ReDoCTA;
 			sourceTree = "<group>";
@@ -129,6 +127,38 @@
 			path = ReDoCTATests;
 			sourceTree = "<group>";
 		};
+		85594E0D23FEEDA500F0B0D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85594DE423FEE79600F0B0D1 /* AppDelegate.swift */,
+				85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */,
+				85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */,
+				85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */,
+				85594DF523FEE79E00F0B0D1 /* Info.plist */,
+				85594DEA23FEE79600F0B0D1 /* Main.storyboard */,
+				85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */,
+				85594DF023FEE79E00F0B0D1 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85594E0E23FEEDD600F0B0D1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85594DE823FEE79600F0B0D1 /* MainVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85594E0F23FEEEA700F0B0D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85594E1023FEEEBB00F0B0D1 /* User.swift */,
+				85594E1223FEEEE800F0B0D1 /* Alert.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CDFF6047190A573103EF9DEA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +167,6 @@
 				E09F724FF91B77667DF5B635 /* Pods-ReDoCTATests.debug.xcconfig */,
 				70971F648B1AD8532DD74811 /* Pods-ReDoCTATests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -310,11 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85594DE923FEE79600F0B0D1 /* ViewController.swift in Sources */,
+				85594DE923FEE79600F0B0D1 /* MainVC.swift in Sources */,
 				85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */,
+				85594E1123FEEEBB00F0B0D1 /* User.swift in Sources */,
 				85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */,
 				85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */,
 				85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */,
+				85594E1323FEEEE800F0B0D1 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

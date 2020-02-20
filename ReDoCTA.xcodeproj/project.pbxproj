@@ -15,6 +15,7 @@
 		85594DF123FEE79E00F0B0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85594DF023FEE79E00F0B0D1 /* Assets.xcassets */; };
 		85594DF423FEE79E00F0B0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */; };
 		85594DFF23FEE79E00F0B0D1 /* ReDoCTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */; };
+		85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594E0923FEE93D00F0B0D1 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		85594DFA23FEE79E00F0B0D1 /* ReDoCTATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReDoCTATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReDoCTATests.swift; sourceTree = "<group>"; };
 		85594E0023FEE79E00F0B0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85594E0923FEE93D00F0B0D1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				85594DE423FEE79600F0B0D1 /* AppDelegate.swift */,
 				85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */,
 				85594DE823FEE79600F0B0D1 /* ViewController.swift */,
+				85594E0923FEE93D00F0B0D1 /* Secrets.swift */,
 				85594DEA23FEE79600F0B0D1 /* Main.storyboard */,
 				85594DF023FEE79E00F0B0D1 /* Assets.xcassets */,
 				85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85594DE923FEE79600F0B0D1 /* ViewController.swift in Sources */,
+				85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */,
 				85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */,
 				85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */,
 				85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */,

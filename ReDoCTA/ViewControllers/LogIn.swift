@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  ReDoCTA
 //
 //  Created by EricM on 2/20/20.
@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class MainVC: UIViewController, UITextFieldDelegate {
+class LoginVC: UIViewController, UITextFieldDelegate {
     
     lazy var label: UILabel = {
         let label = UILabel()
@@ -20,14 +20,16 @@ class MainVC: UIViewController, UITextFieldDelegate {
     lazy var userNameText: UITextField = {
         let tf = UITextField()
         tf.placeholder = "UserName"
-        
+        tf.backgroundColor = .white
+        tf.layer.cornerRadius = 5
         return tf
     }()
     
     lazy var passwordText: UITextField = {
         let tf = UITextField()
         tf.placeholder = "Password"
-        
+        tf.backgroundColor = .white
+        tf.layer.cornerRadius = 5
         return tf
     }()
 
@@ -36,8 +38,8 @@ class MainVC: UIViewController, UITextFieldDelegate {
         let button = UIButton()
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.6798086851, green: 0.9229053351, blue: 0.9803921569, alpha: 1)
-        button.setTitle(title, for: .normal)
-        button.titleLabel?.text = "Log In"
+        button.layer.cornerRadius = 5
+        button.setTitle("Log In", for: .normal)
         button.addTarget(self, action: #selector(logInPressed), for: .touchUpInside)
         return button
     }()
@@ -46,15 +48,15 @@ class MainVC: UIViewController, UITextFieldDelegate {
         let button = UIButton()
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.6798086851, green: 0.9229053351, blue: 0.9803921569, alpha: 1)
-        button.setTitle(title, for: .normal)
-        button.titleLabel?.text = "Sign In"
+        button.layer.cornerRadius = 5
+        button.setTitle("Sign In", for: .normal)
         button.addTarget(self, action: #selector(signInPressed), for: .touchUpInside)
         return button
     }()
     
     @objc func logInPressed(){
         guard let email = userNameText.text, email != "", let password = passwordText.text, password != "" else {
-            let vc = MainVC()
+            let vc = LoginVC()
             Alerts.showAlert(withTitle: "Error", andMessage: "Invalid Fields", VC: vc)
                 return
             }
@@ -72,7 +74,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
     private func handleLoginResponse(with result: Result<User,Error>) {
         switch result{
         case .failure(let error):
-            Alerts.showAlert(withTitle: "Error", andMessage: "\(error)", VC: MainVC())
+            Alerts.showAlert(withTitle: "Error", andMessage: "\(error)", VC: LoginVC())
         case .success:
             let VC = TabBar()
             VC.modalPresentationStyle = .fullScreen
@@ -86,19 +88,19 @@ class MainVC: UIViewController, UITextFieldDelegate {
         items.forEach({view.addSubview($0)})
         
         NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
+            label.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.heightAnchor.constraint(equalToConstant: 50),
             
             userNameText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             userNameText.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            userNameText.widthAnchor.constraint(equalToConstant: 200),
+            userNameText.widthAnchor.constraint(equalToConstant: 300),
             userNameText.heightAnchor.constraint(equalToConstant: 60),
             
             passwordText.topAnchor.constraint(equalTo: userNameText.bottomAnchor, constant: 10),
             passwordText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             passwordText.heightAnchor.constraint(equalToConstant: 60),
-            passwordText.widthAnchor.constraint(equalToConstant: 200),
+            passwordText.widthAnchor.constraint(equalToConstant: 300),
             
             logIn.topAnchor.constraint(equalTo: passwordText.bottomAnchor, constant: 10),
             logIn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -117,6 +119,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
         setupConstraints()
         // Do any additional setup after loading the view.
     }

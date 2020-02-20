@@ -13,6 +13,7 @@ class TabBar: UITabBarController {
     let mainVC = UINavigationController(rootViewController: ThingsFromOnlineViewController())
     let faveVC = UINavigationController(rootViewController: FavoriteViewController())
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         mainVC.tabBarItem = UITabBarItem(title: "Collection", image: UIImage(systemName: "tray"), tag: 0)

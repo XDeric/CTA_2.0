@@ -1,0 +1,6 @@
+framework module Pods_ReDoCTATests {
+  umbrella header "Pods-ReDoCTATests-umbrella.h"
+
+  export *
+  module * { export * }
+}

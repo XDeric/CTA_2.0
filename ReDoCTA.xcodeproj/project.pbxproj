@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C6AFC578E01756867CB7E2B /* Pods_ReDoCTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09234D911A298B9FE134A1F4 /* Pods_ReDoCTA.framework */; };
+		7CEC1DAACD2832A8C7BEA5D8 /* Pods_ReDoCTATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */; };
 		85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE423FEE79600F0B0D1 /* AppDelegate.swift */; };
 		85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */; };
 		85594DE923FEE79600F0B0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE823FEE79600F0B0D1 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		85594DF423FEE79E00F0B0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */; };
 		85594DFF23FEE79E00F0B0D1 /* ReDoCTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */; };
 		85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594E0923FEE93D00F0B0D1 /* Secrets.swift */; };
+		85594E0C23FEEB6A00F0B0D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09234D911A298B9FE134A1F4 /* Pods_ReDoCTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReDoCTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70971F648B1AD8532DD74811 /* Pods-ReDoCTATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTATests.release.xcconfig"; path = "Target Support Files/Pods-ReDoCTATests/Pods-ReDoCTATests.release.xcconfig"; sourceTree = "<group>"; };
 		85594DE123FEE79600F0B0D1 /* ReDoCTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReDoCTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85594DE423FEE79600F0B0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +47,11 @@
 		85594DFE23FEE79E00F0B0D1 /* ReDoCTATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReDoCTATests.swift; sourceTree = "<group>"; };
 		85594E0023FEE79E00F0B0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85594E0923FEE93D00F0B0D1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A24BFEC8610CF81BA1EEA9E0 /* Pods-ReDoCTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.debug.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.debug.xcconfig"; sourceTree = "<group>"; };
+		A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReDoCTATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3122BE9CE6E7244438EC183 /* Pods-ReDoCTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTA.release.xcconfig"; path = "Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA.release.xcconfig"; sourceTree = "<group>"; };
+		E09F724FF91B77667DF5B635 /* Pods-ReDoCTATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTATests.debug.xcconfig"; path = "Target Support Files/Pods-ReDoCTATests/Pods-ReDoCTATests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6AFC578E01756867CB7E2B /* Pods_ReDoCTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEC1DAACD2832A8C7BEA5D8 /* Pods_ReDoCTATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5B8ECA685ADE3CC42EC414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09234D911A298B9FE134A1F4 /* Pods_ReDoCTA.framework */,
+				A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85594DD823FEE79600F0B0D1 = {
 			isa = PBXGroup;
 			children = (
 				85594DE323FEE79600F0B0D1 /* ReDoCTA */,
 				85594DFD23FEE79E00F0B0D1 /* ReDoCTATests */,
 				85594DE223FEE79600F0B0D1 /* Products */,
+				CDFF6047190A573103EF9DEA /* Pods */,
+				1D5B8ECA685ADE3CC42EC414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +114,7 @@
 				85594DF023FEE79E00F0B0D1 /* Assets.xcassets */,
 				85594DF223FEE79E00F0B0D1 /* LaunchScreen.storyboard */,
 				85594DF523FEE79E00F0B0D1 /* Info.plist */,
+				85594E0B23FEEB6A00F0B0D1 /* GoogleService-Info.plist */,
 				85594DED23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld */,
 			);
 			path = ReDoCTA;
@@ -105,6 +129,18 @@
 			path = ReDoCTATests;
 			sourceTree = "<group>";
 		};
+		CDFF6047190A573103EF9DEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A24BFEC8610CF81BA1EEA9E0 /* Pods-ReDoCTA.debug.xcconfig */,
+				C3122BE9CE6E7244438EC183 /* Pods-ReDoCTA.release.xcconfig */,
+				E09F724FF91B77667DF5B635 /* Pods-ReDoCTATests.debug.xcconfig */,
+				70971F648B1AD8532DD74811 /* Pods-ReDoCTATests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85594E0323FEE79E00F0B0D1 /* Build configuration list for PBXNativeTarget "ReDoCTA" */;
 			buildPhases = (
+				889696026EEBA8E48B1E20E6 /* [CP] Check Pods Manifest.lock */,
 				85594DDD23FEE79600F0B0D1 /* Sources */,
 				85594DDE23FEE79600F0B0D1 /* Frameworks */,
 				85594DDF23FEE79600F0B0D1 /* Resources */,
+				33B7F49C5CD730783B10BBC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85594E0623FEE79E00F0B0D1 /* Build configuration list for PBXNativeTarget "ReDoCTATests" */;
 			buildPhases = (
+				796622A04832CBBD40A4A7F9 /* [CP] Check Pods Manifest.lock */,
 				85594DF623FEE79E00F0B0D1 /* Sources */,
 				85594DF723FEE79E00F0B0D1 /* Frameworks */,
 				85594DF823FEE79E00F0B0D1 /* Resources */,
@@ -187,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85594DF423FEE79E00F0B0D1 /* LaunchScreen.storyboard in Resources */,
+				85594E0C23FEEB6A00F0B0D1 /* GoogleService-Info.plist in Resources */,
 				85594DF123FEE79E00F0B0D1 /* Assets.xcassets in Resources */,
 				85594DEC23FEE79600F0B0D1 /* Main.storyboard in Resources */,
 			);
@@ -200,6 +240,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33B7F49C5CD730783B10BBC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReDoCTA/Pods-ReDoCTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		796622A04832CBBD40A4A7F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReDoCTATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		889696026EEBA8E48B1E20E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReDoCTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85594DDD23FEE79600F0B0D1 /* Sources */ = {
@@ -368,6 +472,7 @@
 		};
 		85594E0423FEE79E00F0B0D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24BFEC8610CF81BA1EEA9E0 /* Pods-ReDoCTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,6 +490,7 @@
 		};
 		85594E0523FEE79E00F0B0D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3122BE9CE6E7244438EC183 /* Pods-ReDoCTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +508,7 @@
 		};
 		85594E0723FEE79E00F0B0D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09F724FF91B77667DF5B635 /* Pods-ReDoCTATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -423,6 +530,7 @@
 		};
 		85594E0823FEE79E00F0B0D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70971F648B1AD8532DD74811 /* Pods-ReDoCTATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

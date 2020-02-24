@@ -109,7 +109,8 @@ class CreateAccountViewController: UIViewController {
     
     @objc func handleSignupPressed() {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
-            Alerts.showAlert(withTitle: "Error", andMessage: "Failed to create account", VC: self)
+            
+            self.showAlert(withTitle: "Error", andMessage: "Failed to create account")
             print("Failed to sign up")
             return
         }
@@ -126,7 +127,7 @@ class CreateAccountViewController: UIViewController {
                 self?.handleCreatedUserInFirestore(result: newResult)
             }
         case .failure(let error):
-            Alerts.showAlert(withTitle: "Error creating user", andMessage: "an error occured while creating new account \(error)", VC: CreateAccountViewController())
+            self.showAlert(withTitle: "Error creating user", andMessage: "an error occured while creating new account \(error)")
         }
     }
     

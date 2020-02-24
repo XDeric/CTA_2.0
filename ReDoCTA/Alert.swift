@@ -8,11 +8,12 @@
 
 import UIKit
 
-struct Alerts {
+extension UIViewController {
     
-    static func showAlert(withTitle title: String, andMessage message: String, VC: UIViewController) {
+    func showAlert(withTitle title: String, andMessage message: String) {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        VC.present(alertVC, animated: true, completion: nil)
+            self.present(alertVC, animated: true, completion: nil)
     }
 }
+

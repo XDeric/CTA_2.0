@@ -51,7 +51,7 @@ class LoginSetup{
             button.setTitleColor(.black, for: .normal)
             button.backgroundColor = #colorLiteral(red: 0.6798086851, green: 0.9229053351, blue: 0.9803921569, alpha: 1)
             button.layer.cornerRadius = 5
-            button.setTitle("Sign In", for: .normal)
+            button.setTitle("Sign Up", for: .normal)
             button.addTarget(self, action: #selector(signInPressed), for: .touchUpInside)
             return button
         }()
@@ -84,6 +84,7 @@ class LoginSetup{
             }
         }
     
+    //MARK: Constraints
     func setupConstraints(view: UIView){
         let items: [UIView] = [label,userNameText,passwordText,logIn,signIn]
         items.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
@@ -114,5 +115,12 @@ class LoginSetup{
             signIn.widthAnchor.constraint(equalToConstant: 100),
             signIn.heightAnchor.constraint(equalToConstant: 50),
         ])
+    }
+}
+
+//MARK: Extension
+extension LoginVC : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField,_ textField2: UITextField) -> Bool {
+        return true
     }
 }

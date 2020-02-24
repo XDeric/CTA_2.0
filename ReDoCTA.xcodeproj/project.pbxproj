@@ -182,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				85594E1023FEEEBB00F0B0D1 /* User.swift */,
-				85EF837323FEF63400F9AF77 /* UpdateUserData.swift */,
 				85EF838223FEFAAE00F9AF77 /* API.swift */,
+				85EF837323FEF63400F9AF77 /* UpdateUserData.swift */,
 				85594E1223FEEEE800F0B0D1 /* Alert.swift */,
 			);
 			name = Model;

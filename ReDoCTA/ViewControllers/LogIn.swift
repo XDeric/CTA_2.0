@@ -9,7 +9,7 @@
 import UIKit
 
 
-class LoginVC: UIViewController, UITextFieldDelegate {
+class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

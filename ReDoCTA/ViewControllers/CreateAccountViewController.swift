@@ -13,21 +13,10 @@ class CreateAccountViewController: UIViewController {
     
     var selectedApi = String(){
         didSet{
-            //TODO do something when slectedApi gets set
             UserDefaults.standard.set(selectedApi, forKey: "API")
         }
     }
     
-    
-    //MARK: view did load
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.5807225108, green: 0.066734083, blue: 0, alpha: 1)
-        setupCreateStackView()
-        setupBackButton()
-        
-        // Do any additional setup after loading the view.
-    }
     //MARK: items on view
     
     lazy var emailTextField: UITextField = {
@@ -120,7 +109,7 @@ class CreateAccountViewController: UIViewController {
     
     @objc func handleSignupPressed() {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
-            showAlert(withTitle: "Error", andMessage: "Failed to create account")
+            Alerts.showAlert(withTitle: "Error", andMessage: "Failed to create account", VC: self)
             print("Failed to sign up")
             return
         }
@@ -137,7 +126,7 @@ class CreateAccountViewController: UIViewController {
                 self?.handleCreatedUserInFirestore(result: newResult)
             }
         case .failure(let error):
-            showAlert(withTitle: "Error creating user", andMessage: "an error occured while creating new account \(error)")
+            Alerts.showAlert(withTitle: "Error creating user", andMessage: "an error occured while creating new account \(error)", VC: CreateAccountViewController())
         }
     }
     
@@ -146,7 +135,7 @@ class CreateAccountViewController: UIViewController {
         case .success:
             let mainVC = TabBar()
             mainVC.modalPresentationStyle = .fullScreen
-            present(mainVC, animated: true, completion: nil)
+            mainVC.present(mainVC, animated: true, completion: nil)
             
         case .failure(let error):
             print("error adding user to firestore \(error)")
@@ -157,14 +146,7 @@ class CreateAccountViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    private func showAlert(withTitle title: String, andMessage message: String) {
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        present(alertVC, animated: true, completion: nil)
-    }
-    
     //MARK: Setup constraints
-    
     private func setupCreateStackView() {
         let stackView = UIStackView(arrangedSubviews: [titleLabel,emailTextField,passwordTextField,instructionLabel, picker,signUpButton])
         stackView.axis = .vertical
@@ -189,7 +171,14 @@ class CreateAccountViewController: UIViewController {
     
     
     
-    
+    //MARK: Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.5807225108, green: 0.066734083, blue: 0, alpha: 1)
+        setupCreateStackView()
+        setupBackButton()
+        
+    }
 }
 
 extension CreateAccountViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -205,5 +194,4 @@ extension CreateAccountViewController: UIPickerViewDelegate, UIPickerViewDataSou
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedApi = APIList.list[row]
     }
-
 }

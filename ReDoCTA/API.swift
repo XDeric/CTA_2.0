@@ -211,5 +211,5 @@ final class RijksDetailAPI {
 //MARK: self made string for refrence
 
 struct APIList{
-    static var list = ["Ticket Master","Rijks Studio"]
+    static var list = ["ticket","rijks"]
 }

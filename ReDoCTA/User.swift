@@ -19,13 +19,13 @@ class AppUser {
     let email: String?
     let uid: String
     let dateCreated: Date?
-    var chosenAPI: API
+    var chosenAPI: String?
 //    
     init(from user: User) {
         self.email = user.email
         self.uid = user.uid
         self.dateCreated = user.metadata.creationDate
-        self.chosenAPI = AppUser.getApi()
+        self.chosenAPI = user.photoURL?.absoluteString
     }
     
     
@@ -39,13 +39,18 @@ class AppUser {
         self.email = email
         self.uid = id
         self.dateCreated = dateCreated
-        self.chosenAPI = API(rawValue: chosenAPI) ?? API.rijks
+        self.chosenAPI = chosenAPI
     }
     
-    static func getApi()-> API{
-        
-        
-        return API.rijks
+    static func getApi(api: API)-> API{
+        switch api {
+        case .rijks:
+            return API.rijks
+        case .ticket:
+            return API.ticket
+        default:
+            return API.rijks
+        }
     }
     
     var fieldsDict: [String: Any] {

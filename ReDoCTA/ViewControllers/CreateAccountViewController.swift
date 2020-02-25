@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class CreateAccountViewController: UIViewController {
     
+    let shared = CreateAccountViewController()
+    
     var selectedApi = String(){
         didSet{
             UserDefaults.standard.set(selectedApi, forKey: "API")
@@ -108,10 +110,10 @@ class CreateAccountViewController: UIViewController {
     
     
     @objc func handleSignupPressed() {
-        guard let email = emailTextField.text, let password = passwordTextField.text else {
+        guard let email = emailTextField.text, let password = passwordTextField.text else{
             
             self.showAlert(withTitle: "Error", andMessage: "Failed to create account")
-            print("Failed to sign up")
+            print("Failed to sign up, make sure you've  chosen an Api")
             return
         }
         FirebaseAuthService.manager.createNewUser(withEmail: email, password: password) { [weak self] (result) in

@@ -6,7 +6,7 @@
 //  Copyright © 2020 EricM. All rights reserved.
 //
 
- UIKit
+ import UIKit
 import FirebaseAuth
 
 class FavoriteViewController: UIViewController {
@@ -50,7 +50,7 @@ class FavoriteViewController: UIViewController {
     @objc func logoffButton(){
         do {
             try Auth.auth().signOut()
-            let VC = ViewController()
+            let VC = LoginVC()
             VC.modalPresentationStyle = .fullScreen
             present(VC, animated: true, completion: nil)
             //dismiss(animated: true, completion: nil)

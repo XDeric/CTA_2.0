@@ -28,6 +28,7 @@ class LoginVC: UIViewController {
     lazy var passwordText: UITextField = {
         let tf = UITextField()
         tf.placeholder = "Password"
+        tf.isSecureTextEntry = true
         tf.backgroundColor = .white
         tf.layer.cornerRadius = 5
         return tf
@@ -76,7 +77,7 @@ class LoginVC: UIViewController {
         case .success:
             let vc = TabBar()
             vc.modalPresentationStyle = .fullScreen
-            vc.present(vc, animated: true, completion: nil)
+            present(vc, animated: true, completion: nil)
         }
     }
     

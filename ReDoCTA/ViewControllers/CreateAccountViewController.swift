@@ -11,8 +11,6 @@ import FirebaseAuth
 
 class CreateAccountViewController: UIViewController {
     
-    let shared = CreateAccountViewController()
-    
     var selectedApi = String(){
         didSet{
             UserDefaults.standard.set(selectedApi, forKey: "API")
@@ -138,7 +136,7 @@ class CreateAccountViewController: UIViewController {
         case .success:
             let mainVC = TabBar()
             mainVC.modalPresentationStyle = .fullScreen
-            mainVC.present(mainVC, animated: true, completion: nil)
+            present(mainVC, animated: true, completion: nil)
             
         case .failure(let error):
             print("error adding user to firestore \(error)")

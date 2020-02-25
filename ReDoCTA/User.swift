@@ -15,6 +15,12 @@ enum API: String {
     case ticket = "ticket"
 }
 
+extension User {
+    func getApi() -> String{
+        return "test"
+    }
+}
+
 class AppUser {
     let email: String?
     let uid: String
@@ -25,7 +31,7 @@ class AppUser {
         self.email = user.email
         self.uid = user.uid
         self.dateCreated = user.metadata.creationDate
-        self.chosenAPI = user.photoURL?.absoluteString
+        self.chosenAPI = user.photoURL?.absoluteString //user.getApi() // photoURL?.absoluteString
     }
     
     
@@ -42,16 +48,16 @@ class AppUser {
         self.chosenAPI = chosenAPI
     }
     
-    static func getApi(api: API)-> API{
-        switch api {
-        case .rijks:
-            return API.rijks
-        case .ticket:
-            return API.ticket
-        default:
-            return API.rijks
-        }
-    }
+//    static func getApi(api: API)-> API{
+//        switch api {
+//        case .rijks:
+//            return API.rijks
+//        case .ticket:
+//            return API.ticket
+//        default:
+//            return API.rijks
+//        }
+//    }
     
     var fieldsDict: [String: Any] {
         return [

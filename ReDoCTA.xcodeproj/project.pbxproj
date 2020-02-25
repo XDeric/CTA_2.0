@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6C6AFC578E01756867CB7E2B /* Pods_ReDoCTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09234D911A298B9FE134A1F4 /* Pods_ReDoCTA.framework */; };
 		7CEC1DAACD2832A8C7BEA5D8 /* Pods_ReDoCTATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75075724C22E0F17C241F5F /* Pods_ReDoCTATests.framework */; };
+		855556812405B5C400839CD0 /* ThingsOnlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855556802405B5C400839CD0 /* ThingsOnlineTableViewCell.swift */; };
+		855556832405B65100839CD0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855556822405B65100839CD0 /* DetailViewController.swift */; };
 		85594DE523FEE79600F0B0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE423FEE79600F0B0D1 /* AppDelegate.swift */; };
 		85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */; };
 		85594DE923FEE79600F0B0D1 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85594DE823FEE79600F0B0D1 /* LogIn.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		09234D911A298B9FE134A1F4 /* Pods_ReDoCTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReDoCTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70971F648B1AD8532DD74811 /* Pods-ReDoCTATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReDoCTATests.release.xcconfig"; path = "Target Support Files/Pods-ReDoCTATests/Pods-ReDoCTATests.release.xcconfig"; sourceTree = "<group>"; };
+		855556802405B5C400839CD0 /* ThingsOnlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsOnlineTableViewCell.swift; sourceTree = "<group>"; };
+		855556822405B65100839CD0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		85594DE123FEE79600F0B0D1 /* ReDoCTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReDoCTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85594DE423FEE79600F0B0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85594DE623FEE79600F0B0D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				85594DE823FEE79600F0B0D1 /* LogIn.swift */,
 				85EF838023FEFA8D00F9AF77 /* CreateAccountViewController.swift */,
 				85EF837E23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift */,
+				855556822405B65100839CD0 /* DetailViewController.swift */,
 				85EF837C23FEF89600F9AF77 /* FavoriteViewController.swift */,
 			);
 			path = ViewControllers;
@@ -204,6 +209,7 @@
 			children = (
 				85EF837523FEF75400F9AF77 /* TabBar.swift */,
 				85EF838E23FF330800F9AF77 /* LoginView.swift */,
+				855556802405B5C400839CD0 /* ThingsOnlineTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				85EF838323FEFAAE00F9AF77 /* API.swift in Sources */,
 				85EF837923FEF7DC00F9AF77 /* FirebaseAuth.swift in Sources */,
 				85594E0A23FEE93D00F0B0D1 /* Secrets.swift in Sources */,
+				855556832405B65100839CD0 /* DetailViewController.swift in Sources */,
 				85EF837F23FEF8BB00F9AF77 /* ThingsFromOnlineViewController.swift in Sources */,
 				85EF838723FEFBBF00F9AF77 /* NetworkHelper.swift in Sources */,
 				85594E1123FEEEBB00F0B0D1 /* User.swift in Sources */,
@@ -412,6 +419,7 @@
 				85EF838F23FF330800F9AF77 /* LoginView.swift in Sources */,
 				85594DEF23FEE79600F0B0D1 /* ReDoCTA.xcdatamodeld in Sources */,
 				85594DE723FEE79600F0B0D1 /* SceneDelegate.swift in Sources */,
+				855556812405B5C400839CD0 /* ThingsOnlineTableViewCell.swift in Sources */,
 				85EF837D23FEF89600F9AF77 /* FavoriteViewController.swift in Sources */,
 				85594E1323FEEEE800F0B0D1 /* Alert.swift in Sources */,
 				85EF838923FEFBC900F9AF77 /* ImageHelper.swift in Sources */,
